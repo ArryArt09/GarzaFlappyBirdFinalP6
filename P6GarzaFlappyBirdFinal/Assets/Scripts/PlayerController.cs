@@ -37,5 +37,6 @@ public class PlayerController : MonoBehaviour
     {
         IsDead = true;
         animator.SetTrigger("Dead");
+        GameControl.instance.BirdDied ();
     }
 }
